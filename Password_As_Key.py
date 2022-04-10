@@ -5,7 +5,7 @@ from Crypto.Cipher import AES
 r = requests.get('http://aes.cryptohack.org/passwords_as_keys/encrypt_flag/')
 res = bytes.fromhex(r.json()['ciphertext'])
 
-with open('Tugas5/bruteforce', 'r') as f:
+with open('bruteforce', 'r') as f:
     for words in f:
         words = words.strip()
 
